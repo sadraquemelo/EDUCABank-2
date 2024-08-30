@@ -1,34 +1,138 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     list-style: none;
 }
 
+/* INÍCIO DO CABEÇALHO */
 header {
- background-color:rgba(0, 225, 255, 0.466);
- padding: 15px;
- display: flex;
- justify-content: space-around;
- align-items: center;
-}
-.imageBank {
-width: 200px;
-height: auto;
-
+    background-color: rgba(10, 102, 114, 0.575);
+    padding: 50px;
 }
 
-.section-1 button {
- width: 150px;
- height: 40px;
- background-color: rgb(255,255,255,0.671);
- border-radius: 12px;   
+header nav ul li a {
+    text-decoration: none; /*Usado para remover o sublinhado*/
+    color: white; /*Cor da letra*/
 }
 
-.section-1{
-    padding: 250px;
-    background-color: rgba(0, 204, 255, 0.192);
-    background-position: center;
+header nav ul {
+   display: flex;
+   justify-content: end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+/* FIM DO CABEÇALHO */
+
+
+
+
+
+/* PRIMEIRA SESSÃO */
+.sessão1{
+    padding: 200px;
+    background-color: aquamarine;
+}
+
+.sessão1 h1 {
+ font-size: 40px;
+ font-weight: bold;
+}
+
+.sessão1 p {
+font-size: 20px; /*Tamanho da letra*/
+margin-top: 15px; /*Espaçamento superior*/
+margin-bottom: 15px; /*Espaçamento Inferior*/
+}
+
+.sessão1 button {
+padding: 10px;
+width: 250px;
+border-radius: 30px;
+background-color: rgba(95, 158, 160, 0.582);
+color: white;
+}
+
+
+/* FIM DA PRIMEIRA SESSÃO */
+
+
+
+/* INÍCIO DA SEGUNDA SESSÃO */
+
+
+.sessão2 {
+    padding: 200px;
+    background-color: beige;
     display: flex;
-    justify-content: space space-evenly;
+    justify-content: space-evenly;
 }
+
+
+.sessão2 img {
+    width: 300px;
+    margin-top: -85px;
+}
+
+.sessão2 h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.sessão2 p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.sessão2 button{
+    padding: 10px;
+    width: 250px;
+    border-radius: 30px;
+    background-color:rgba(95, 158, 160, 0.582); 
+    color: white;
+}
+
+.sessão3{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.sessão3 h2{
+    display: flex;
+    justify-content:space-evenly ;
+    margin-bottom: 15px;
+}
+.sessão3 p{
+    font-size: 20px;
+    margin: 2opx;
+}
+
+.sessão3 button{
+    padding: 10px;
+    width: 250px;
+    border-radius: 30px;
+    background-color:rgba(95, 158, 160, 0.582); 
+    color: white;
+    margin: 30px;
+}
+
+.sessão3 img {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 300px;
+    
+}
+
+.sessão3 .line{
+    width: 800px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+.sessão4{
+background-image: url(IMAGENS/img\ cofre\ fundo.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
