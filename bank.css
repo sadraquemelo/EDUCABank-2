@@ -11,19 +11,23 @@ header {
     padding: 50px;
 }
 
-header nav ul li a {
+header nav ul li a {/*âncora do heater*/
     text-decoration: none; /*Usado para remover o sublinhado*/
     color: white; /*Cor da letra*/
 }
 
-header nav ul {
+header nav ul {/*ul-Estilizando a lista não ordenada do header*/
    display: flex;
    justify-content: end;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 20px;/*Espaçamentos entre listas */
 }
+    .ul-educabank li a {
+    text-decoration: none;/*Retirando a decoração de texto(sublinhado)*/
+    }
+
 /* FIM DO CABEÇALHO */
 
 
@@ -32,28 +36,52 @@ header nav ul li {
 
 /* PRIMEIRA SESSÃO */
 .sessão1{
-    padding: 200px;
+    padding: 200px;/*preechimento da sessão*/
     background-color: aquamarine;
 }
 
 .sessão1 h1 {
- font-size: 40px;
- font-weight: bold;
+ font-size: 40px;/*Tamanho da Font*/
+ font-weight: 600;/*Peso da Font*/
 }
 
-.sessão1 p {
-font-size: 20px; /*Tamanho da letra*/
+.sessão1 p {/*Parágrafo para estilização*/
+font-size: 20px; /*Tamanho da Font*/
 margin-top: 15px; /*Espaçamento superior*/
 margin-bottom: 15px; /*Espaçamento Inferior*/
 }
 
-.sessão1 button {
-padding: 10px;
+.sessão1 button { /*Estilização do Botão da primeira sessão*/
+height: 50px;
 width: 250px;
 border-radius: 30px;
 background-color: rgba(95, 158, 160, 0.582);
 color: white;
 }
+
+.sessão1 a button:hover {
+background-color: rgba(95, 158, 160, 0.582);
+color: white;
+color: white;
+border-color: white;
+transition: 0.8s;/*tempo de transição*/
+}
+
+.sessão2 button { /*Estilização do Botão da primeira sessão*/
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: rgba(95, 158, 160, 0.582);
+    color: white;
+    }
+    
+    .sessão2 a button:hover {
+    background-color: rgba(95, 158, 160, 0.582);
+    color: white;
+    color: white;
+    border-color: white;
+    transition: 0.8s;/*tempo de transição*/
+    }  
 
 
 /* FIM DA PRIMEIRA SESSÃO */
@@ -75,18 +103,21 @@ color: white;
     width: 300px;
     margin-top: -85px;
 }
-
+/*Inicio da Estilização da sessão2*/
 .sessão2 h2{
+    display: flex;/*Tornando a sessão Flex*/
+    justify-content: space-evenly;/*Alinhamento na Horizontal*/
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 600;
 }
 .sessão2 p{
     font-size: 20px;
     margin-bottom: 15px;
+    font-weight: 500;
+    color: rgb(30);
 }
 
 .sessão2 button{
-    padding: 10px;
     width: 250px;
     border-radius: 30px;
     background-color:rgba(95, 158, 160, 0.582); 
@@ -94,30 +125,40 @@ color: white;
 }
 
 .sessão3{
+    padding: 200px;
     font-size: 25px;
     font-weight: bold;
+    background-color: beige;
+    text-align: center;
     
 }
-.sessão3 h2{
+.sessão3 h2{/*Estilizando meu subtitulo*/
     display: flex;
     justify-content:space-evenly ;
     margin-bottom: 15px;
+    margin-top: -170px;
+
 }
 .sessão3 p{
     font-size: 20px;
     margin: 2opx;
+    color: rgb(0,0,0,0.564);/* Cor da Letra*/
+    text-align: justify;/* Aqui justificamos o texto */
 }
 
-.sessão3 button{
+.sessão3 button{/* Estilização do botão*/
     padding: 10px;
     width: 250px;
     border-radius: 30px;
-    background-color:rgba(95, 158, 160, 0.582); 
+    background-color:rgba(95, 129, 160, 0.582); 
     color: white;
+    font-size: 15px;/*Tamanho da Letra*/
     margin: 30px;
+    margin-bottom:40px;
+    margin-top: 40px;
 }
 
-.sessão3 img {
+.sessão3 img {/* Estilização da imagen*/
     font-size: 40px;
     display: flex;
     justify-content: space-evenly;
@@ -125,14 +166,22 @@ color: white;
     
 }
 
-.sessão3 .line{
-    width: 800px;
-    margin-left: 300px;
-    margin-top: 10px;
+.sessão3 .line{/* Estilização da Linha*/
+    width: 70%;/* Largura da Linha */
+    margin:40px auto;/* Espaçamento de 40px top e Bottom e esquerda e direita automáticas*/
+    
 }
+
+.section3 img{/* Estilização da Imagem*/
+ margin-left: 200px;/*Espaçamento da esquerda*/
+ /*Iremos Alterar a Formatação de Alinhamento*/
+}
+
 .sessão4{
 background-image: url(IMAGENS/img\ cofre\ fundo.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
+padding: 300px;
+}
