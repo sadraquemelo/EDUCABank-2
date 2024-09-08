@@ -1,3 +1,4 @@
+/*Configuração Padrão de Início*/
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
 /* INÍCIO DO CABEÇALHO */
 header {
     background-color: rgba(10, 102, 114, 0.575);
-    padding: 50px;
+    padding: 50px;/*Ajustamos o tamanho do preenchimento -- podemos usar 70px*/
 }
 
 header nav ul li a {/*âncora do heater*/
@@ -17,16 +18,28 @@ header nav ul li a {/*âncora do heater*/
 }
 
 header nav ul {/*ul-Estilizando a lista não ordenada do header*/
-   display: flex;
-   justify-content: end;
+   display: flex;/*Usamos para jogar os itens lado a lado*/
+   justify-content: end;/*Aqui justificamos os 
+   itens desta lista para o fim do header*/
 }
-
+/*Chamamos nossas Li diretamente para espaçalas*/
 header nav ul li {
     margin-left: 20px;/*Espaçamentos entre listas */
 }
-    .ul-educabank li a {
+/*Efeito ao passar o cursor*/
+header li a:hover {
+    color: rgb(81, 81, 228);/*Habilitando uma cor ao passar o mouse*/
+    transition: 0,8s;/*Adicioamos aqui uma transição*/
+}
+
+.ul-educabank li a {
+    color: var(--font-color)
     text-decoration: none;/*Retirando a decoração de texto(sublinhado)*/
+    font-size: 13px;/*Tamanho da letra*/
     }
+
+
+
 
 /* FIM DO CABEÇALHO */
 
@@ -37,31 +50,46 @@ header nav ul li {
 /* PRIMEIRA SESSÃO */
 .sessão1{
     padding: 200px;/*preechimento da sessão*/
+    width: auto;
     background-color: aquamarine;
-}
+    flex-wrap: wrap;/*Usado para informar que os itens podem quebrar em telas meores */
 
+}
+/*Alterado nosso Títuulo*/
 .sessão1 h1 {
- font-size: 40px;/*Tamanho da Font*/
  font-weight: 600;/*Peso da Font*/
+ color: rgb(0, 0, 0, 0.712);/*Cor da Letra*/
 }
 
-.sessão1 p {/*Parágrafo para estilização*/
-font-size: 20px; /*Tamanho da Font*/
+.sessão1 p {/*Alterado nosso Parágrafo dentro da nossa primeira ID para estilização*/
+font-size: 40px; /*Tamanho da Font*/
 margin-top: 15px; /*Espaçamento superior*/
 margin-bottom: 15px; /*Espaçamento Inferior*/
 }
-
-.sessão1 button { /*Estilização do Botão da primeira sessão*/
+/*Estilização do Botão da primeira sessão*/
+.sessão1 button { 
+padding: 20px;/*Tamanho do preennchimento interno do botão*/
 height: 50px;
-width: 250px;
-border-radius: 30px;
+width: 250px;/*TAmanho lateral do botão(larguar) ---podemos usar 300px */
+border-radius: 50px;/*Borda arredondada do botão*/
+margin: 30px;/*Margin em volta do botão*/
+cursor: pointer;
 background-color: rgba(95, 158, 160, 0.582);
-color: white;
+border-color:rgb(19, 153, 108);/*Cor da borda*/ 
+}
+
+.sessão1 a button {
+    padding: 1.5rem;
+    border-radius: 50px;/*Arredondammento da borda do botão*/
+    width: 20vw;
+    cursor: pointer;
+    margin-top: 10px;
+    color: rgb(19, 153, 108);
+    border-color: rgb(19, 153, 108);
 }
 
 .sessão1 a button:hover {
 background-color: rgba(95, 158, 160, 0.582);
-color: white;
 color: white;
 border-color: white;
 transition: 0.8s;/*tempo de transição*/
@@ -69,10 +97,11 @@ transition: 0.8s;/*tempo de transição*/
 
 .sessão2 button { /*Estilização do Botão da primeira sessão*/
     height: 50px;
-    width: 250px;
-    border-radius: 30px;
+    width: 250px;/*Tamaho lateral do botão*/
+    border-radius: 50px;/*Borda arredonda do botão*/
     background-color: rgba(95, 158, 160, 0.582);
     color: white;
+
     }
     
     .sessão2 a button:hover {
@@ -82,6 +111,7 @@ transition: 0.8s;/*tempo de transição*/
     border-color: white;
     transition: 0.8s;/*tempo de transição*/
     }  
+    
 
 
 /* FIM DA PRIMEIRA SESSÃO */
@@ -184,4 +214,22 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 padding: 300px;
+}
+
+.container-cofre {
+    /* Criação e estilização do Container Cofre*/
+    padding: 200px;
+    /*Preenchimento*/
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
+    /*Filtro Gradient e imagem de fundo*/
+    background-attachment: fixed;
+    /*Deixando a imagem fixa*/
+    background-size: cover;
+    /*Tamanho da imagem = Total*/
+    background-position: center;
+    /*Posicionamento da imagem*/
+
+    display: flex; /*Tornando nossa sessão Flex*/
+    justify-content: space-evenly; /*Justificativa do conteúdo - Horizontal*/
+    align-items: center; /*Alinhamento na vertical*/
 }
