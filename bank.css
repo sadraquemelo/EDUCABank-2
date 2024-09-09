@@ -89,7 +89,9 @@ border-color:rgb(19, 153, 108);/*Cor da borda*/
 }
 
 .sessão1 a button:hover {
-background-color: rgba(95, 158, 160, 0.582);
+background-color: rgba(95, 158, 160, 0.582
+
+);
 color: white;
 border-color: white;
 transition: 0.8s;/*tempo de transição*/
