@@ -268,7 +268,7 @@ transition: 0.8s;/*tempo de transição*/
  @media screen and (max-width: 1366px) {
 
 
-
+    /*Arrumar a responsabilidade dos Botões*/
     #sessão a button {
         font-size: 0.7rem;
         width: 15rem;
@@ -296,6 +296,11 @@ transition: 0.8s;/*tempo de transição*/
 
 #sessão p {
     font-size: 2rem;
+}
+
+#app div img {
+    width: 20rem;
+    height: auto;
 }
 
 #app div p {
@@ -341,11 +346,318 @@ footer img {
 }
 
 footer p {
-    font-size: 0.6rem;
+   font-size: 0.6rem;
 
+   
 }
 
 footer a {
     font-size: 0.6rem;
 }
+}
 
+
+
+
+@media screen and (max-width:767) {
+    .menu-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sessão p {
+        font-size: 1.8rem;
+        margin: 15px 0;
+    }
+
+
+    #container-cofre img {
+        width: 16rem;
+        margin-top: -0.3rem;
+    }
+
+
+
+    #container-cofre h2 {
+        font-size: 1.8rem;
+    }
+
+
+    #container-cofre p {
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-right: -30px;
+    }
+
+
+    #container-cofre div span {
+        color: yellow;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    #app {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #app div p {
+        text-align: left;
+        margin-right: -2rem;
+    }
+
+    #app div img {
+        margin-top: 2rem;
+        width: 25rem;
+    }
+
+
+    #container-cofre {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-cofre img {
+        width: 10rem;
+        height: auto;
+        margin-left: 12.2rem;
+        margin-bottom: 10px;
+    }
+
+    #container-cofre div span {
+        color: yellow;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+    header {
+        padding: 5vh;
+    }
+
+    .menu-header li a {
+        font-size: 0.5rem;
+    }
+
+    #sessão {
+
+        display: block;
+        justify-content: center;
+        padding: 30vh;
+    }
+
+    #sessão h1 {
+        font-size: 2rem;
+    }
+
+    #sessão p {
+        font-size: 1rem;
+    }
+
+    #sessão a button {
+        width: 11rem;
+        font-size: 0.6rem;
+    }
+
+    #app {
+        padding: 30vh;
+    }
+
+    #app div p {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    #app a button {
+        width: 8rem;
+        font-size: 0.5rem;
+    }
+
+    #app div img {
+        width: 17rem;
+        margin-left: -0.5;
+    }
+
+    #container h2 {
+        font-size: 20px;
+    }
+
+    #container p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #container {
+        padding: 12vh;
+    }
+
+
+
+    #container img {
+        margin-left: 3rem;
+    }
+
+
+
+    #container-cofre {
+        padding: 15vh;
+        text-align: center;
+    }
+
+
+    #container-cofre img {
+        margin-left: 2rem;
+    }
+
+    #container-cofre p {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    #container-cofre h2 {
+        font-size: 2rem;
+    }
+
+    #container-cofre div span {
+        color: yellow;
+
+    }
+
+
+    footer {
+        padding: 5vh;
+    }
+
+    footer p {
+        font-size: 0.5rem;
+    }
+
+    footer a {
+        font-size: 0.5rem;
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width:400px) {
+    header {
+        padding: 3.5vh;
+    }
+
+    
+
+    #sessão {
+        padding: 15vh;
+    }  
+    
+    #sessao a button {
+        width: 11rem;
+        padding: 0.5rem;
+        margin-left: 1px;
+    }
+
+
+
+
+
+
+    #app {
+        padding: 15vh;
+    }
+
+
+    #app div a button {
+        width: 12.6rem;
+        padding: 0.5rem;
+        margin-left: 2.7rem;
+    }
+
+    #app div img {
+        width: 16rem;
+        margin-left: 23px;
+        margin-bottom: 100px;
+
+    }
+
+
+    #conntainer {
+        padding: 15vh;
+
+    }
+
+    #container a button {
+        width: 12.6rem;
+        padding: 0.5rem;
+        margin-left: -1rem;
+    }
+
+    #container .line {
+        width: 120%;
+        margin-left: -0.8rem;
+    }
+
+    #container img {
+        width: 13rem;
+        margin-left: -1.2rem;
+    }
+
+    #container-cofre {
+        padding: 12vh;
+    }
+
+
+
+
+    #containner-cofre img {
+        width: 10rem;
+        height: auto;
+        margin-left: -0.7rem;
+    }
+
+    #container-cofre h2 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.2rem;
+        text-align: left;
+        margin-right: 9px;
+    }
+
+    #container-cofre div span {
+        color: yellow;
+    }
+
+
+    footer {
+        padding: 2rem;
+    }
+
+    #footer imag {
+        width: 13.5rem;
+
+    }
+
+    footer a {
+        font-size: 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.5rem;
+    }
+}
